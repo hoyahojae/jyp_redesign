@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+/* HEADER */
+header {
+  height: 72px;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/* MAIN */
+main {
+  width: 100%;
+  height: 100%;
+}
+
+.main_video {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+@media screen and (max-aspect-ratio: 1219/685) {
+  main video {
+    width: auto;
+    height: 100vh;
+  } 
+}
+.video_black {
+  background-color: rgba(38, 38, 38, .5);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main_contents {
+  position: absolute;
+  top: 10%;
+  right: 25%;
+  text-align: right;
+}
+.main_text h1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #f1f1f1;
+}
+.main_contents h3 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #f1f1f1;
+}
+.main_contents h4 {
+  color: #f1f1f1;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.main_text {
+  line-height: 70px;
+}
+
+.main_contents .btn {
+  margin-top: 24px;
+  float: right;
+}
+
+.main_contents .schedule {
+  margin-top: 120px;
+}
+.main_contents .schedule .schedule_link a {
+  color: #2faeff;
+  font-weight: 500;
+}
+
+.main_contents .notice {
+  margin-top: 40px;
+}
+.main_contents .notice .notice_link li a {
+  color: #2faeff;
+  font-weight: 500;
+}
+
+.notice_album {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.notice_album .notice_list {
+  width: 50%;
+  height: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2FAEFF;
+}
+.notice_list .notice_all {
+  width: 25.6771vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  color: #f1f1f1;
+}
+.notice_list .notice_all .notice_title {
+  font-weight: 700;
+}
+.notice_list .notice_all .notice_text {
+  width: 350px;
+  text-align: center;
+}
+.notice_list .notice_all .notice_data {
+  font-size: 16px;
+  width: 150px;
+  height: 100%;
+  text-align: center;
+}
+.notice_list .notice_all a span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f1f1f1;
+}
+.notice_album .new_album {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #262626;
+}
+.new_album .new_album_all {
+  width: 25.6771vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  color: #f1f1f1;
+  width: 150px;
+}
+.new_album .new_album_title {
+  font-weight: 700;
+}
+.new_album .new_album_all a span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f1f1f1;
+}
+.album_all {
+  width: 100vw;
+  height: 363px;
+  background-color: #262626;
+}
+
+.bookmark {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgoldenrod;
+}
+.bookmark h1 {
+  font-size: 36px;
+  color: #f1f1f1;
+  font-weight: 800;
+}
+.bookmark p {
+  font-size: 20px;
+  color: #f1f1f1;
+  font-weight: 500;
+}
+.bookmark .jyp_fans,
+.bookmark .audition,
+.bookmark .recruit {
+  width: 100vw;
+  height: 100vh;
+  flex-basis: 1;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bookmark_layout {
+  width: 27.5vw;
+  height: 900px;
+  position: relative;
+  overflow: hidden;
+}
+.bookmark_logo {
+  width: 184px;
+  height: 64px;
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  cursor: pointer;
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.bookmark .jyp_fans {
+  background-image: url("../images/jyp_fans_img.png");
+}
+.bookmark .jyp_fans .bookmark_logo {
+  background-image: url("../images/jyp_fans_logo.png");
+}
+.bookmark .audition {
+  background-image: url("../images/audition_img.png");
+}
+.bookmark .audition .bookmark_logo {
+  background-image: url("../images/audition_logo.png");
+}
+.bookmark .recruit {
+  background-image: url("../images/recruit_img.png");
+}
+.bookmark .recruit .bookmark_logo {
+  background-image: url("../images/recruit_logo.png");
+}
