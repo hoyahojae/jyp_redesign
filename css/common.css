@@ -38,6 +38,11 @@ a {
   font-size: 14px;
   text-align: center;
   width: 190px;
+  transition: all .2s ease-in-out;
+}
+.btn:hover {
+  background-color: #2faeff;
+  color: #f1f1f1;
 }
 
 /* HEADER */
