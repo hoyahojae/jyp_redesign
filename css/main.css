@@ -120,7 +120,12 @@ main {
   height: 100%;
   text-align: center;
 }
-.notice_list .notice_all a span {
+#drop_down {
+  width: 24px;
+  height: 24px;
+}
+.notice_list .notice_all span,
+.notice_list .notice_all_active span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,7 +138,8 @@ main {
   align-items: center;
   background-color: #262626;
 }
-.new_album .new_album_all {
+.new_album .new_album_all,
+.new_album .new_album_all_active {
   width: 25.6771vw;
   display: flex;
   justify-content: space-between;
@@ -141,11 +147,13 @@ main {
   font-size: 20px;
   color: #f1f1f1;
   width: 150px;
+  cursor: pointer;
 }
 .new_album .new_album_title {
   font-weight: 700;
 }
-.new_album .new_album_all a span {
+.new_album .new_album_all a span,
+.new_album .new_album_all_active a span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,8 +161,19 @@ main {
 }
 .album_all {
   width: 100vw;
-  height: 363px;
+  height: 0px;
   background-color: #262626;
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+}
+.album_all.active {
+  height: 363px;
+}
+.new_album_icon {
+  transition: all .2s ease-in-out;
+}
+.new_album_icon.active {
+  transform: rotate(180deg);
 }
 
 .bookmark {
@@ -187,6 +206,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .bookmark_layout {
   width: 27.5vw;
@@ -205,20 +225,30 @@ main {
   background-position: right;
   background-repeat: no-repeat;
 }
-.bookmark .jyp_fans {
-  background-image: url("../images/jyp_fans_img.png");
+.bookmark_bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.bookmark_bg img {
+  height: 100%;
+  transition: all .1s ease-in-out;
+}
+
+.bookmark a:hover .bookmark_bg img {
+  transform: scale(1.5);
 }
 .bookmark .jyp_fans .bookmark_logo {
   background-image: url("../images/jyp_fans_logo.png");
 }
-.bookmark .audition {
-  background-image: url("../images/audition_img.png");
-}
 .bookmark .audition .bookmark_logo {
   background-image: url("../images/audition_logo.png");
-}
-.bookmark .recruit {
-  background-image: url("../images/recruit_img.png");
 }
 .bookmark .recruit .bookmark_logo {
   background-image: url("../images/recruit_logo.png");
