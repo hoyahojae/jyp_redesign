@@ -77,15 +77,28 @@ header .menu>li {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+header .menu>li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header .menu .on {
-  background-color: #2faeff;
+  background-color: rgba(38, 38, 38, .5);
 }
 header .sub_menu {
   position: absolute;
   top: 72px;
+  left: 0;
+  display: none;
+  background-color: rgba(38, 38, 38, .5);
+  transition: all .2s ease-in-out;
+}
+header .sub_menu.active {
   display: flex;
-  background-color: #2faeff;
 }
 header .sub_menu li {
   width: 90px;
@@ -94,9 +107,21 @@ header .sub_menu li {
   justify-content: center;
   align-items: center;
   font-size: 14px;
+  transition: all .2s ease-in-out;
 }
 header .sub_menu a {
   color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .menu>li:hover {
+  background-color: rgba(38, 38, 38, .5);
+}
+header .sub_menu>li:hover {
+  background-color: #2faeff;
 }
 
 header .language {
