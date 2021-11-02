@@ -30,6 +30,23 @@ main .artist_list {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.artist_card .artist_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.7813vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.artist_card .artist_img img {
+  height: 100%;
+  transition: all .2s ease-in-out;
+}
+.artist_card.bernard .artist_img img {
+  height: auto;
+  width: 100%;
+}
 .artist_card .artist_name {
   width: 100%;
   height: 15%;
@@ -44,12 +61,6 @@ main .artist_list {
   border-radius: 0 0 0.7813vw 0.7813vw;
   background-color: rgba(38, 38, 38, .7);
 }
-.artist_card.jyp { background-image: url("../images/jyp_img.jpeg"); }
-.artist_card.twopm { background-image: url("../images/2pm_img.jpeg"); }
-.artist_card.bernard { background-image: url("../images/bernard_img.jpeg"); }
-.artist_card.day6 { background-image: url("../images/day6_img.jpeg"); }
-.artist_card.twice { background-image: url("../images/twice_img.jpeg"); }
-.artist_card.straykids { background-image: url("../images/stray_kids_img.jpeg"); }
-.artist_card.itzy { background-image: url("../images/itzy_img.jpeg"); }
-.artist_card.boystory { background-image: url("../images/boystory_img.png"); }
-.artist_card.niziu { background-image: url("../images/niziu_img.jpeg"); }
+.artist_card:hover .artist_img img {
+  transform: scale(1.2);
+}
