@@ -41,9 +41,10 @@ main {
 
 .main_contents {
   position: absolute;
-  top: 10%;
-  right: 25%;
+  top: 26vh;
+  right: 25vw;
   text-align: right;
+  background-color: aquamarine;
 }
 .main_text h1 {
   font-size: 60px;
@@ -125,7 +126,7 @@ main {
   height: 24px;
 }
 .notice_list .notice_all span,
-.notice_list .notice_all_active span {
+.notice_list .notice_all.active span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,8 +139,8 @@ main {
   align-items: center;
   background-color: #262626;
 }
-.new_album .new_album_all,
-.new_album .new_album_all_active {
+#newalbumall,
+.new_album > .active {
   width: 25.6771vw;
   display: flex;
   justify-content: space-between;
@@ -152,8 +153,8 @@ main {
 .new_album .new_album_title {
   font-weight: 700;
 }
-.new_album .new_album_all a span,
-.new_album .new_album_all_active a span {
+#newalbumall a span,
+.new_album > .active a span {
   display: flex;
   justify-content: center;
   align-items: center;
