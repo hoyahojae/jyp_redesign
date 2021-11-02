@@ -3,7 +3,7 @@
 /* MAIN */
 main {
   width: 100vw;
-  height: calc(100vh - 335px);
+  /* height: calc(100vh - 335px); */
   background-color: #f1f1f1;
 }
 main .inner {
@@ -16,7 +16,8 @@ main .inner {
   height: 100%;
   border-radius: 0.5208vw;
   box-shadow: 0 0 30px rgba(174, 174, 192, .4);
-  margin-top: 32px;
+  margin-top: 34px;
+  margin-bottom: 34px;
 }
 .contact_name {
   display: flex;
@@ -29,14 +30,12 @@ main .inner {
   height: 48px;
   line-height: 48px;
   background-color: #2faeff;
-}
-.contact_name li a {
   color: #f1f1f1;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
 }
 .contact_name .on {
   background-color: #fff;
-}
-.contact_name .on a {
   color: #2faeff;
   font-weight: 700;
 }
@@ -50,11 +49,14 @@ main .inner {
 .contact_contents {
   height: 550px;
   background-color: #fff;
-  display: flex;
+  display: none;
   justify-content: center;
   align-content: space-between;
   flex-wrap: wrap;
   border-radius: 0 0 0.5208vw 0.5208vw;
+}
+.contact_contents.active {
+  display: flex;
 }
 #contact_map {
   width: 60vw;
@@ -81,21 +83,22 @@ main .inner {
 }
 .contact_tel {
   border-right: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .contact_adress,
 .contact_call {
+  width: 100%;
   display: flex;
-}
-.contact_adress {
-  margin-top: 12px;
 }
 .contact_adress h3,
 .contact_call h3 {
-  width: 30%;
+  width: 35%;
 }
 .contact_adress_text,
 .contact_call_text {
-  width: 70%;
+  width: 65%;
 }
 .contact_call {
   display: flex;
@@ -104,10 +107,21 @@ main .inner {
 .contact_adress_text {
   flex-basis: 0;
   flex-grow: 1;
+  letter-spacing: -1.5px;
 }
 .contact_email {
   padding-left: 15px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+}
+.contact_email h3 {
+  width: 100%;
+}
+
+.contact_name li:hover {
+  background-color: #262626;
+}
+.contact_name .on:hover {
+  background-color: #fff;
 }
