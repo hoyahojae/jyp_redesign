@@ -44,7 +44,6 @@ main {
   top: 26vh;
   right: 25vw;
   text-align: right;
-  background-color: aquamarine;
 }
 .main_text h1 {
   font-size: 60px;
@@ -239,7 +238,7 @@ main {
 }
 .bookmark_bg img {
   height: 100%;
-  transition: all .1s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .bookmark a:hover .bookmark_bg img {

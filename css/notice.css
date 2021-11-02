@@ -13,7 +13,7 @@ main .inner {
 }
 .notice_table {
   width: 100%;
-  margin-top: 32px;
+  margin-top: 35px;
 }
 .notice_title {
   display: flex;
@@ -48,10 +48,10 @@ main .inner {
 .notice_list>div {
   display: flex;
 }
-.notice_list>div:nth-child(2n-1) {
+.notice_list>div {
   border-bottom: 1px solid #ddd;
 }
-.notice_list>div:nth-child(19) {
+.notice_list>div:nth-child(10) {
   border-bottom: 2px solid #2faeff;
 }
 .notice_list .notice_numb {
@@ -153,4 +153,8 @@ main .inner {
 .notice_page .on {
   background-color: #2faeff;
   color: #f1f1f1;
+}
+
+.notice_subs a:hover {
+  text-decoration: underline;
 }
