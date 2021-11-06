@@ -43,7 +43,6 @@ new Swiper('.notice_list .swiper-container', {
 
 // NEW ALBUM
 new Swiper('.album_all .swiper-container', {
-  slidePerView: 5,
   spaceBetween: 12,
   loop: true,
   pagination: {
