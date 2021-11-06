@@ -1,20 +1,57 @@
 // DROP DOWN
-// 토글 버튼
 const newalbumEl = document.querySelector('.album_all');
 const dropDownIcon = document.querySelector("#drop_down")
 const newalbumToggleBtn = document.querySelector('#newalbumall');
-// promotion이 숨겨졌는지 아닌지 판단
+
 let isHideNewalbum = false;
 
 newalbumToggleBtn.addEventListener('click', function () {
-  isHideNewalbum = !isHideNewalbum    // isHidePromotion이 flase면 true로 반환, 또 그 반대
+  isHideNewalbum = !isHideNewalbum
   if (isHideNewalbum) {
-    // 숨김 처리
     newalbumEl.classList.add('active');
     dropDownIcon.classList.add('active');
   } else {
-    // 보이도록 처리
     newalbumEl.classList.remove('active');
     dropDownIcon.classList.remove('active')
+  }
+});
+
+
+// swiper.js
+// MAIN
+new Swiper('.main_video .swiper-container', {
+  loop: true,
+  autoplay: {
+    delay: 5000
+  },
+  pagination: {
+    el: '.main_video .swiper-pagination',
+    clickable: true
+  },
+  navigation: {
+    prevEl: '.main_video .swiper-prev',
+    nextEl: '.main_video .swiper-next'
+  }
+});
+
+// NOTICE
+new Swiper('.notice_list .swiper-container', {
+  direction: 'vertical',
+  autoplay: true,
+  loop: true
+});
+
+// NEW ALBUM
+new Swiper('.album_all .swiper-container', {
+  slidePerView: 5,
+  spaceBetween: 12,
+  loop: true,
+  pagination: {
+    el: '.album_all .swiper-pagination',
+    clickable: true
+  },
+  navigation: {
+    prevEl: '.album_all .swiper-prev',
+    nextEl: '.album_all .swiper-next'
   }
 });
