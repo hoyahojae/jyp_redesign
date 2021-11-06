@@ -3,7 +3,7 @@
 /* HEADER */
 header {
   height: 72px;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   top: 0;
   left: 0;
@@ -16,16 +16,24 @@ main {
   height: 100%;
 }
 
-.main_video {
+.main_video,
+.main_video .swiper-container {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  position: relative;
 }
 @media screen and (max-aspect-ratio: 1219/685) {
   main video {
+    width: auto;
+    height: 100vh;
+  } 
+}
+@media screen and (max-aspect-ratio: 480/201) {
+  main .stray {
     width: auto;
     height: 100vh;
   } 
@@ -37,6 +45,24 @@ main {
   position: absolute;
   top: 0;
   left: 0;
+}
+.main_video .swiper-pagination {
+  position: absolute;
+  bottom: 30%;
+  height: 60px;
+}
+.main_video .swiper-prev,
+.main_video .swiper-next {
+  position: absolute;
+  top: 45%;
+  z-index: 1;
+  cursor: pointer;
+}
+.main_video .swiper-prev {
+  left: 19%;
+}
+.main_video .swiper-next {
+  right: 19%;
 }
 
 .main_contents {

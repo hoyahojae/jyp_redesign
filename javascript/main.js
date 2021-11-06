@@ -20,6 +20,7 @@ newalbumToggleBtn.addEventListener('click', function () {
 // swiper.js
 // MAIN
 new Swiper('.main_video .swiper-container', {
+  effect: 'fade',
   loop: true,
   autoplay: {
     delay: 5000
