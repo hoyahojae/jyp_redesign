@@ -26,7 +26,7 @@ main {
   overflow: hidden;
   position: relative;
 }
-/* .main_video video {
+.main_video video {
   width: 2000px;
 }
 @media screen and (max-aspect-ratio: 1219/685) {
@@ -40,7 +40,7 @@ main {
     width: auto;
     height: 100vh;
   } 
-} */
+}
 main video {
   width: 100vw;
 }
