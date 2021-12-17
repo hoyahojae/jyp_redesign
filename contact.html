@@ -112,7 +112,45 @@
 
         <div id="seoullist" class="contact_contents active">
           <div class="contact_map" id="map1">
-            1234
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=665f85d74fc3c242dc5b19ac0031cf0c&libraries=services"></script>
+                <script>
+                  var mapContainer1 = document.getElementById('map1'), // 지도를 표시할 div 
+                      mapOption1 = {
+                          center: new kakao.maps.LatLng(37.5240879, 127.1269187), // 지도의 중심좌표
+                          level: 3 // 지도의 확대 레벨
+                      };  
+
+                  // 지도를 생성합니다    
+                  var map1 = new kakao.maps.Map(mapContainer1, mapOption1); 
+
+                  // 주소-좌표 변환 객체를 생성합니다
+                  var geocoder1 = new kakao.maps.services.Geocoder();
+
+                  // 주소로 좌표를 검색합니다
+                  geocoder1.addressSearch('서울특별시 강동구 강동대로 205', function(result, status) {
+
+                      // 정상적으로 검색이 완료됐으면 
+                      if (status === kakao.maps.services.Status.OK) {
+
+                          var coords1 = new kakao.maps.LatLng(result[0].y, result[0].x);
+
+                          // 결과값으로 받은 위치를 마커로 표시합니다
+                          var marker1 = new kakao.maps.Marker({
+                              map: map1,
+                              position: coords1
+                          });
+
+                  // 인포윈도우로 장소에 대한 설명을 표시합니다
+                  var infowindow1 = new kakao.maps.InfoWindow({
+                      content: '<div style="width:150px;text-align:center;padding:6px 0;">JYP ENTERTAINMENT KOREA</div>'
+                  });
+                  infowindow1.open(map1, marker1);
+
+                  // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+                  map1.setCenter(coords1);
+              } 
+                });   
+                </script>
           </div>
           <div class="contact_us">
             <div class="contact_tel">
@@ -143,7 +181,44 @@
 
         <div id="tokyolist" class="contact_contents">
           <div class="contact_map" id="map2">
-            2548
+                <script>
+                  var mapContainer2 = document.getElementById('map2'), // 지도를 표시할 div 
+                      mapOption2 = {
+                          center: new kakao.maps.LatLng(37.5240879, 127.1269187), // 지도의 중심좌표
+                          level: 3 // 지도의 확대 레벨
+                      };  
+
+                  // 지도를 생성합니다    
+                  var map2 = new kakao.maps.Map(mapContainer2, mapOption2); 
+
+                  // 주소-좌표 변환 객체를 생성합니다
+                  var geocoder2 = new kakao.maps.services.Geocoder();
+
+                  // 주소로 좌표를 검색합니다
+                  geocoder2.addressSearch('서울특별시 강동구 강동대로 205', function(result, status) {
+
+                      // 정상적으로 검색이 완료됐으면 
+                      if (status === kakao.maps.services.Status.OK) {
+
+                          var coords2 = new kakao.maps.LatLng(result[0].y, result[0].x);
+
+                          // 결과값으로 받은 위치를 마커로 표시합니다
+                          var marker2 = new kakao.maps.Marker({
+                              map: map2,
+                              position: coords2
+                          });
+
+                  // 인포윈도우로 장소에 대한 설명을 표시합니다
+                  var infowindow2 = new kakao.maps.InfoWindow({
+                      content: '<div style="width:150px;text-align:center;padding:6px 0;">JYP ENTERTAINMENT JAPAN</div>'
+                  });
+                  infowindow2.open(map2, marker2);
+
+                  // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+                  map2.setCenter(coords2);
+              } 
+                });   
+                </script>
           </div>
           <div class="contact_us">
             <div class="contact_tel">
@@ -173,8 +248,45 @@
         </div>
 
         <div id="beijinglist" class="contact_contents">
-          <div class="contact_map" id="map2">
-            4567
+          <div class="contact_map" id="map3">
+            <script>
+              var mapContainer3 = document.getElementById('map3'), // 지도를 표시할 div 
+                  mapOption3 = {
+                      center: new kakao.maps.LatLng(37.5240879, 127.1269187), // 지도의 중심좌표
+                      level: 3 // 지도의 확대 레벨
+                  };  
+
+              // 지도를 생성합니다    
+              var map3 = new kakao.maps.Map(mapContainer3, mapOption3); 
+
+              // 주소-좌표 변환 객체를 생성합니다
+              var geocoder3 = new kakao.maps.services.Geocoder();
+
+              // 주소로 좌표를 검색합니다
+              geocoder3.addressSearch('서울특별시 강동구 강동대로 205', function(result, status) {
+
+                  // 정상적으로 검색이 완료됐으면 
+                  if (status === kakao.maps.services.Status.OK) {
+
+                      var coords3 = new kakao.maps.LatLng(result[0].y, result[0].x);
+
+                      // 결과값으로 받은 위치를 마커로 표시합니다
+                      var marker3 = new kakao.maps.Marker({
+                          map: map3,
+                          position: coords3
+                      });
+
+              // 인포윈도우로 장소에 대한 설명을 표시합니다
+              var infowindow3 = new kakao.maps.InfoWindow({
+                  content: '<div style="width:150px;text-align:center;padding:6px 0;">JYP ENTERTAINMENT BEIJING</div>'
+              });
+              infowindow3.open(map3, marker3);
+
+              // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+              map3.setCenter(coords3);
+          } 
+            });   
+            </script>
           </div>
           <div class="contact_us">
             <div class="contact_tel">
@@ -204,7 +316,44 @@
 
         <div id="bangkoklist" class="contact_contents">
           <div class="contact_map" id="map4">
-            1234
+            <script>
+              var mapContainer4 = document.getElementById('map4'), // 지도를 표시할 div 
+                  mapOption4 = {
+                      center: new kakao.maps.LatLng(37.5240879, 127.1269187), // 지도의 중심좌표
+                      level: 3 // 지도의 확대 레벨
+                  };  
+
+              // 지도를 생성합니다    
+              var map4 = new kakao.maps.Map(mapContainer4, mapOption4); 
+
+              // 주소-좌표 변환 객체를 생성합니다
+              var geocoder4 = new kakao.maps.services.Geocoder();
+
+              // 주소로 좌표를 검색합니다
+              geocoder4.addressSearch('서울특별시 강동구 강동대로 205', function(result, status) {
+
+                  // 정상적으로 검색이 완료됐으면 
+                  if (status === kakao.maps.services.Status.OK) {
+
+                      var coords4 = new kakao.maps.LatLng(result[0].y, result[0].x);
+
+                      // 결과값으로 받은 위치를 마커로 표시합니다
+                      var marker4 = new kakao.maps.Marker({
+                          map: map4,
+                          position: coords4
+                      });
+
+              // 인포윈도우로 장소에 대한 설명을 표시합니다
+              var infowindow4 = new kakao.maps.InfoWindow({
+                  content: '<div style="width:150px;text-align:center;padding:6px 0;">JYP ENTERTAINMENT BANGKOK</div>'
+              });
+              infowindow4.open(map4, marker4);
+
+              // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+              map3.setCenter(coords4);
+          } 
+            });   
+            </script>
           </div>
           <div class="contact_us">
             <div class="contact_tel">
