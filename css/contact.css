@@ -3,7 +3,6 @@
 /* MAIN */
 main {
   width: 100vw;
-  /* height: calc(100vh - 335px); */
   background-color: #f1f1f1;
 }
 main .inner {
@@ -58,13 +57,26 @@ main .inner {
 .contact_contents.active {
   display: flex;
 }
-#contact_map {
-  width: 60vw;
+.contact_map {
+  width: 1152px;
   height: 349px;
   margin-top: 30px;
+  background-color: red;
+}
+#map1 {
+  background-color: red;
+}
+#map2 {
+  background-color: green;
+}
+#map3 {
+  background-color: blue;
+}
+#map4 {
+  background-color: black;
 }
 .contact_us {
-  width: 60vw;
+  width: 1152px;
   height: 120px;
   display: flex;
   margin-bottom: 30px;
