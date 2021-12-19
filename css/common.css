@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-  width: 100%;
+  width: 1920px;
   color: #191919;
   font-size: 16px;
   font-weight: 400;
@@ -47,7 +47,7 @@ a {
 
 /* HEADER */
 header {
-  width: 100vw;
+  width: 1920px;
   color: #f1f1f1;
 }
 header .inner {
@@ -74,7 +74,7 @@ header .menu>li a {
 }
 
 header .menu {
-  margin-left: 5.8854vw;
+  margin-left: 113px;
   position: relative;
 }
 header .menu>li {
@@ -158,7 +158,7 @@ header .language .on a {
 
 /* FOOTER */
 footer {
-  width: 100vw;
+  width: 1920px;
   height: 72px;
   background-color: #262626;
   display: flex;

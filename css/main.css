@@ -18,8 +18,8 @@ main {
 
 .main_video,
 .main_video .swiper-container {
-  width: 100vw;
-  height: 100vh;
+  width: 1920px;
+  height: 1080px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,19 +29,19 @@ main {
 @media screen and (max-aspect-ratio: 1219/685) {
   main video {
     width: auto;
-    height: 100vh;
+    height: 1080px;
   } 
 }
 @media screen and (max-aspect-ratio: 480/201) {
   main .stray {
     width: auto;
-    height: 100vh;
+    height: 1080px;
   } 
 }
 .video_black {
   background-color: rgba(38, 38, 38, .5);
   width: 100%;
-  height: 100vh;
+  height: 1080px;
   position: absolute;
   top: 0;
   left: 0;
@@ -67,8 +67,8 @@ main {
 
 .main_contents {
   position: absolute;
-  top: 26vh;
-  right: 25vw;
+  top: 281px;
+  right: 480px;
   text-align: right;
 }
 .main_text h1 {
@@ -126,7 +126,7 @@ main {
   background-color: #2FAEFF;
 }
 .notice_list .notice_all {
-  width: 25.6771vw;
+  width: 493px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -201,7 +201,7 @@ main {
 }
 #newalbumall,
 .new_album > .active {
-  width: 25.6771vw;
+  width: 493px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -221,7 +221,7 @@ main {
   color: #f1f1f1;
 }
 .album_all {
-  width: 100vw;
+  width: 1920px;
   height: 0px;
   background-color: #262626;
   transition: all .2s ease-in-out;
@@ -295,8 +295,8 @@ main {
 }
 
 .bookmark {
-  width: 100vw;
-  height: 100vh;
+  width: 1920px;
+  height: 1080px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -314,8 +314,8 @@ main {
 .bookmark .jyp_fans,
 .bookmark .audition,
 .bookmark .recruit {
-  width: 100vw;
-  height: 100vh;
+  width: 1920px;
+  height: 1080px;
   flex-basis: 1;
   background-size: cover;
   background-position: center;
@@ -326,7 +326,7 @@ main {
   position: relative;
 }
 .bookmark_layout {
-  width: 27.5vw;
+  width: 528px;
   height: 900px;
   position: relative;
   overflow: hidden;

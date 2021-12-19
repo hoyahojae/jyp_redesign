@@ -16,7 +16,7 @@ header .header_video {
 @media screen and (max-aspect-ratio: 1219/685) {
   header video {
     width: auto;
-    height: 100vh;
+    height: 1080px;
   } 
 }
 header .header_contents {
@@ -24,7 +24,7 @@ header .header_contents {
   position: absolute;
   top: 0;
   margin-left: auto;
-  width: 100vw;
+  width: 1920px;
 }
 header .header_title {
   position: absolute;

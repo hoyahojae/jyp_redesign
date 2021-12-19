@@ -2,8 +2,7 @@
 
 /* MAIN */
 main {
-  width: 100vw;
-  /* height: calc(100vh - 335px); */
+  width: 1920px;
 }
 
 main .inner {
@@ -87,7 +86,7 @@ main .inner {
   position: relative;
 }
 .notice_search {
-  width: 15.1042vw;
+  width: 290px;
   height: 30px;
   display: flex;
 }
@@ -132,10 +131,10 @@ main .inner {
 }
 
 .notice_page {
-  width: 14.5833vw;
+  width: 280px;
   height: 24px;
   position: absolute;
-  left: 23.9583vw;
+  left: 460px;
   display: flex;
   justify-content: space-between;
   align-items: center;

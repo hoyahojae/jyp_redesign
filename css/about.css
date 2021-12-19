@@ -2,8 +2,8 @@
 
 /* MAIN */
 main {
-  width: 100vw;
-  height: calc(100vh - 335px);
+  width: 1920px;
+  height: calc(1080px - 335px);
 }
 main .inner {
   display: flex;
@@ -39,7 +39,7 @@ main .about_list {
   margin-top: 12px;
 }
 main .about_list_card {
-  width: 20.4167vw;
+  width: 392px;
   height: 274px;
   border-radius: 10px;
   background-position: center;
