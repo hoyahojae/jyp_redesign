@@ -63,3 +63,7 @@ main .artist_list {
 .artist_card:hover .artist_img img {
   transform: scale(1.2);
 }
+
+.artist_card.niziu .artist_img img {
+  width: 100%;
+}
