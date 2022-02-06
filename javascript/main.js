@@ -22,12 +22,13 @@ newalbumToggleBtn.addEventListener('click', function () {
 new Swiper('.main_video .swiper-container', {
   effect: 'fade',
   loop: true,
+  allowTouchMove: false,
   autoplay: {
     delay: 5000
   },
   pagination: {
     el: '.main_video .swiper-pagination',
-    clickable: true
+    clickable: false
   },
   navigation: {
     prevEl: '.main_video .swiper-prev',
